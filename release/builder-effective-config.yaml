@@ -1,0 +1,35 @@
+directories:
+  output: release
+  buildResources: resources
+appId: com.kinaawa.timetable
+productName: KHSK TimeTable
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+      - package.json
+extraMetadata:
+  main: electron/main.cjs
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: resources/icon.ico
+  publisherName: NextHomeLabs
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: KHSK TimeTable
+  include: installer.nsh
+  artifactName: ${productName}-Setup-${version}.${ext}
+  uninstallDisplayName: ${productName}
+asar: true
+asarUnpack:
+  - node_modules/electron-store/**/*
+npmRebuild: false
+buildDependenciesFromSource: false
+electronVersion: 28.3.3

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Outer circle and curved lines -->
+  <path d="M250 30
+           C380 30 470 120 470 250
+           C470 380 380 470 250 470
+           C120 470 30 380 30 250
+           C30 120 120 30 250 30
+           M250 50
+           C370 50 450 130 450 250
+           C450 370 370 450 250 450
+           C130 450 50 370 50 250
+           C50 130 130 50 250 50" 
+        fill="#1A472A"/>
+  
+  <!-- Star -->
+  <path d="M250 100 L265 140 L305 140 L273 165 L288 205
+           L250 180 L212 205 L227 165 L195 140 L235 140 Z" 
+        fill="#1A472A"/>
+  
+  <!-- Book -->
+  <g transform="translate(175, 200)">
+    <path d="M0 0 L150 0 L150 80 L75 100 L0 80 Z" 
+          fill="#FFB81C"/>
+    <path d="M75 0 L75 100" 
+          stroke="#1A472A" 
+          stroke-width="4" 
+          fill="none"/>
+  </g>
+  
+  <!-- Text banner -->
+  <path d="M100 350 Q250 300 400 350 Q250 400 100 350" 
+        fill="none" 
+        stroke="#1A472A" 
+        stroke-width="2"/>
+  
+  <!-- School name -->
+  <text x="250" y="250" 
+        text-anchor="middle" 
+        font-family="Arial Black" 
+        font-size="24" 
+        fill="#1A472A">
+    KINAAWA
+    <tspan x="250" dy="30">HIGH</tspan>
+    <tspan x="250" dy="30">SCHOOL</tspan>
+  </text>
+  
+  <!-- Motto -->
+  <text x="250" y="380" 
+        text-anchor="middle" 
+        font-family="Arial" 
+        font-size="20" 
+        fill="#1A472A">
+    <tspan>LEARN</tspan>
+    <tspan x="250" dy="0">TO</tspan>
+    <tspan x="250" dy="0">EXCEL</tspan>
+  </text>
+</svg>

@@ -1,0 +1,6 @@
+export const RULES = {
+  MAX_DAILY_PERIODS: 4,
+  MAX_CLASS_PERIODS_PER_DAY: 2,
+  MIN_PERIODS_PER_TEACHER: 8, // Ensure minimum workload
+  MAX_CONSECUTIVE_PERIODS: 2
+};
